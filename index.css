@@ -1,0 +1,71 @@
+@keyframes typing {
+    from {
+        width: 0px;
+    }
+}
+
+@keyframes gallary {
+    from {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    height: 250px;
+    width: 200px;
+}
+
+
+.container span {
+    position: absolute;
+    width: 100px;
+    height: 350px;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 72deg)) translateZ(200px);
+}
+
+
+
+.container {
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(1000px);
+    animation: gallary 30s linear infinite;
+}
+
+
+
+body {
+    background-color: #debd5e;
+    color: rgb(255, 255, 255); /* Ensures text remains readable */
+}
+
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    width: 100%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(20) forwards;
+    margin-left: 20px;
+}

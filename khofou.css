@@ -1,0 +1,67 @@
+body {
+    background-image: url('images/New folder/IMG-20250302-WA0006.jpg'); /* Local image */
+    background-size: cover; /* Ensures it covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.Chibox, .Arabox {
+    width: 50%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Adds space inside the box */
+    color: black;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.8; /* Increases spacing between lines */
+}
+
+.Arabox {
+    color: white;
+    text-align: right; /* Ensures proper alignment for Arabic */
+}
+
+.Chibox p, .Arabox p {
+    margin-bottom: 20px; /* Adds gap between different paragraphs */
+}
+
+#Loc{
+    font-size: 28px;
+}
+header {
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+h2{
+    border: 4vw;
+    border-width: 2px;
+    border-color: rgb(255, 0, 0);
+}
+.container {
+    padding: 2vw;
+    display: flex;
+    /*background-image: linear-gradient(to bottom right, rgb(255, 115, 0), rgb(255, 234, 0));*/
+}
+h1 {
+    color: #000000;
+    font-size: 28px;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+    
+}
+p {
+    line-height: 1.6;
+    
+}
+.location {
+    margin-top: 20px;
+}

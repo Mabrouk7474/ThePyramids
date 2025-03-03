@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Vertical Boxes</title>
+    <style>
+        /* Page styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container for the two sections */
+        .container {
+            display: flex;
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Left box */
+        .box-left {
+            width: 50%;
+            background-color: #3498db; /* Blue color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Right box */
+        .box-right {
+            width: 50%;
+            background-color: #e74c3c; /* Red color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box-left">
+            Left Box - Arabic
+        </div>
+        
+        <div class="box-right">
+            Right Box - Chinese
+        </div>
+    </div>
+
+</body>
+</html>
